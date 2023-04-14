@@ -1,0 +1,15 @@
+.border_radius_left{
+    border-top-left-radius: 12px ; 
+
+      border-bottom-left-radius: 12px ;
+    
+    padding: 2px;
+}
+
+.border_radius_right{
+    border-bottom-right-radius: 12px ;
+    border-top-right-radius: 12px ; 
+      
+}
+
+/*  */
