@@ -1,15 +1,42 @@
-.border_radius_left{
-    border-top-left-radius: 12px ; 
-
-      border-bottom-left-radius: 12px ;
-    
-    padding: 2px;
+.border_radius_left {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 2px;
 }
 
-.border_radius_right{
-    border-bottom-right-radius: 12px ;
-    border-top-right-radius: 12px ; 
-      
+.border_radius_right {
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
+@media only screen and (max-width: 600px) {
+  .mediaForMyRankdiv_1 {
+    display: block;
+  }
+  .teamTurnovrtDIvFIrst {
+    border-top: 1px solid #fcc8d1;
+    margin-bottom: 2px;
+  }
+  .mediaForMyRankdiv_1Span {
+    display: block;
+    text-align: center;
+    margin: 2px;
+  }
+
+  .gridColomtoRow {
+    display: contents;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .ibuttonFlexDiv {
+    display: block;
+  }
+  .ibuttonFlexDivbtn {
+    margin: 7px;
+  }
+
+  .ibuttonFlexDivbtn_btn {
+    width: 100%;
+    margin-right: 0%;
+  }
+}
 /*  */
