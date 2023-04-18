@@ -2,6 +2,7 @@ import React from "react";
 import Header2 from "../Header2";
 import Dashboard from "./Dashboard"
 import MyRank from "./MyRank";
+import MyTeam from "./MyTeam"
 
 function index() {
   return (
@@ -67,7 +68,10 @@ function index() {
            */
         }
         {/** my rank component */}
-        <MyRank/>
+        {/**  <MyRank/>  */}
+       
+        {/** my team component */}
+        <MyTeam/> 
       </div>
       <div className="mt-48"></div>
     </div>

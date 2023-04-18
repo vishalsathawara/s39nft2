@@ -1,0 +1,31 @@
+.mySponser_myTeam_div{
+    display: flex;
+
+}
+
+.mySponser_myTeam_div_2{
+
+}
+
+.heightFit{
+    height: fit-content;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .media_for_refLink_or_publickPage_div {
+    flex-wrap: wrap;
+  }
+  .media_for_refrralLink_div {
+    height: fit-content;
+  }
+
+  .media_for_refrralLink_div_span {
+    margin: auto;
+  }
+
+  .media_for_publicPage_btn {
+    margin-top: 8px;
+    width: 300%;
+  }
+}
