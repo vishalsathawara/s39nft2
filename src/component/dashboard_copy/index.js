@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Header2 from "../Header2";
-import Dashboard from "./Dashboard"
+import Dashboard from "./Dashboard";
 import MyRank from "./MyRank";
-import MyTeam from "./MyTeam"
+import MyTeam from "./MyTeam";
 
 function index() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [page, setPage] = useState(<MyTeam />);
+
   return (
     <div className="w-full flex justify-center flex-col items-center">
       <Header2 />
@@ -36,11 +39,15 @@ function index() {
               <ul className="flex flex-col w-full px-1">
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
                   <img src="/svg/dashboard.svg" alt="" />
-                  <h4 className="ml-4">Dashboard</h4>
+                  <h4 className="ml-4" onClick={() => setPage(<Dashboard />)}>
+                    Dashboard
+                  </h4>
                 </li>
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
                   <img src="/svg/myrank.svg" alt="" />
-                  <h4 className="ml-4">My Rank</h4>
+                  <h4 className="ml-4" onClick={() => setPage(<MyRank />)}>
+                    My Rank
+                  </h4>
                 </li>
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
                   <img src="/svg/myrank.svg" alt="" />
@@ -48,7 +55,9 @@ function index() {
                 </li>
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
                   <img src="/svg/dashboard.svg" alt="" />
-                  <h4 className="ml-4">My Team</h4>
+                  <h4 className="ml-4" onClick={() => setPage(<MyTeam />)}>
+                    My Team
+                  </h4>
                 </li>
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
                   <img src="/svg/dashboard.svg" alt="" />
@@ -62,16 +71,14 @@ function index() {
           </div>
         </div>
         {/** dashboard component */}
-        {
-          /**
+        {/**
            <Dashboard/>
-           */
-        }
+           */}
         {/** my rank component */}
         {/**  <MyRank/>  */}
-       
+
         {/** my team component */}
-        <MyTeam/> 
+        {page}
       </div>
       <div className="mt-48"></div>
     </div>

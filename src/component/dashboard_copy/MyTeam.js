@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./MyTeam.css";
 import MailRoundedIcon from "@mui/icons-material/MailRounded";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
+import MyTeamPerformance from "./MyTeamPerformance";
+import MyTeamSerchMyTeam from "./MyTeamSerchMyTeam";
 
 const MyTeam = () => {
-  const [page, setPage] = useState(<SerchMyTeam />);
+  const [page, setPage] = useState(<MyTeamSerchMyTeam />);
   return (
     <div className="px-8 w-full flex h-fit justify-between flex-col ">
       <div className="flex  media_for_refLink_or_publickPage_div">
@@ -89,9 +91,9 @@ const MyTeam = () => {
             </div>
             <div>
               <div>
-                <div className=" ml-14  mySponser_myTeam_div_2 w-96">
+                <div className=" ml-14  mySponser_myTeam_div_3 w-96">
                   <div className="mb-6">
-                    <h1 className="text-base font-medium ">My sponsor </h1>
+                    <h1 className="text-base font-medium ">My Team </h1>
                   </div>
                   <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-64 rounded">
                     <div className="  p-4">
@@ -124,41 +126,21 @@ const MyTeam = () => {
       </section>
       <div className="mb-6 mt-6 rounded flex bg-slate-100 ">
         <div
-          onClick={(e) => setPage(<SerchMyTeam />)}
-          className="text-center text-base py-3 px-6 font-medium"
+          onClick={(e) => setPage(<MyTeamSerchMyTeam />)}
+          className="text-center cursor-auto text-base py-3 px-6 font-medium"
         >
           Serch My Team
         </div>
 
         <div
-          onClick={(e) => setPage(<Performance />)}
-          className="text-center py-3 px-6 text-base font-medium"
+          onClick={(e) => setPage(<MyTeamPerformance />)}
+          className="text-center py-3 cursor-auto px-6 text-base font-medium"
         >
           Performance Tree
         </div>
-
-        
       </div>
-      <div className="bg-slate-200 h-32 rounded">{page}</div>
+      <div>{page}</div>
     </div>
-  );
-};
-const Performance = () => {
-  return (
-    <>
-      <h1> performance deev</h1>
-    </>
-  );
-};
-
-
-const SerchMyTeam = () => {
-  return (
-    <>
-      <div>
-        <h1>serch my team  </h1>
-      </div>
-    </>
   );
 };
 

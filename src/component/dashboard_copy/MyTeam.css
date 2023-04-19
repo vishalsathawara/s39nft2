@@ -3,9 +3,9 @@
 
 }
 
-.mySponser_myTeam_div_2{
+/* .mySponser_myTeam_div_2{
 
-}
+} */
 
 .heightFit{
     height: fit-content;
@@ -28,4 +28,14 @@
     margin-top: 8px;
     width: 300%;
   }
+
+.mySponser_myTeam_div{
+  display: block;
+}
+.mySponser_myTeam_div_3{
+  
+  margin-left:0;
+  margin-top: 20px;
+}
+
 }
