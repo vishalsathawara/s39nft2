@@ -11,8 +11,12 @@ const MyTeamPerformance = () => {
               alt="You don’t have a tree"
             />
           </div>
-          <div className="font-medium text-sm text-slate-400  grid  place-items-center ">Empty</div>
-          <div  className="font-normal text-xs text-slate-400 grid  place-items-center" >You don’t have a tree</div>
+          <div className="font-medium text-sm text-slate-400  grid  place-items-center ">
+            Empty
+          </div>
+          <div className="font-normal text-xs text-slate-400 grid  place-items-center">
+            You don’t have a tree
+          </div>
         </div>
       </div>
     </div>

@@ -27,12 +27,7 @@ const OurEvents = () => {
           </div>
         </div>
 
-        <div>
-        {
-            page
-        }
-        
-        </div>
+        <div>{page}</div>
       </div>
     </>
   );
