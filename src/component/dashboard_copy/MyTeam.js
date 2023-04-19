@@ -13,9 +13,12 @@ const MyTeam = () => {
         <div className="bg-slate-50 rounded flex justify-start items-center h-13     border  w-full media_for_refrralLink_div">
           <div className="flex justify-start items-center px-6 text-lg w-full flex-wrap text-gray-400  ">
             <div className="m-0.5"> Referral link : </div>
-            <span className=" text-gray-700 m-0.5 text-base media_for_refrralLink_div_span">
+            <a
+              href="https://platinworld.com/en/2714042821"
+              className=" text-gray-700 m-0.5 underline underline-offset-2 text-base media_for_refrralLink_div_span"
+            >
               https://platinworld.com/en/2714042821
-            </span>
+            </a>
           </div>
           <div className="text-gray-500 flex px-4">
             <img src="/svg/qrcode.svg" alt="" className="cursor-pointer" />
@@ -58,14 +61,14 @@ const MyTeam = () => {
                     <div className="ml-3    grid place-items-center ">
                       <div>
                         <div className="text-base font-medium">Yug Pawar</div>
-                        <div className="text-sm font-normal text-slate-400">
-                          sponser
+                        <div className="text-sm font-normal  text-slate-400">
+                          Sponser
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="mt-4  text-center bg-sky-200  h-9 rounded align-middle border-2">
-                    <a className="text-center" href="p">
+                    <a className="text-center cursor-pointer"   href="p">
                       Public Profile
                     </a>
                   </div>
@@ -76,7 +79,7 @@ const MyTeam = () => {
                       <div className="  ">
                         <MailRoundedIcon color="secondary" fontSize="small" />
                       </div>
-                      <div className="text-sm font-normal ml-2  ">
+                      <div className="text-sm cursor-pointer   font-normal ml-2  ">
                         50536dp@gmail.com
                       </div>
                       <div>
@@ -97,7 +100,7 @@ const MyTeam = () => {
                   </div>
                   <div className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-64 rounded">
                     <div className="  p-4">
-                      <div className="h-16 rounded   bg-slate-100 flex  ">
+                      <div className="h-16 rounded bg-slate-100 flex  ">
                         <div className=" ml-3 grid place-items-center">
                           <img
                             className="h-10 w-10 rounded-full align-middle"
@@ -112,6 +115,7 @@ const MyTeam = () => {
                             </div>
                             <div className="text-sm font-normal text-slate-400">
                               Not verified
+                            
                             </div>
                           </div>
                         </div>
@@ -127,14 +131,14 @@ const MyTeam = () => {
       <div className="mb-6 mt-6 rounded flex bg-slate-100 ">
         <div
           onClick={(e) => setPage(<MyTeamSerchMyTeam />)}
-          className="text-center cursor-auto text-base py-3 px-6 font-medium"
+          className="text-center cursor-pointer text-base py-3 px-6 font-medium  hover:text-blue-400  "
         >
           Serch My Team
         </div>
 
         <div
           onClick={(e) => setPage(<MyTeamPerformance />)}
-          className="text-center py-3 cursor-auto px-6 text-base font-medium"
+          className="text-center py-3 cursor-pointer px-6 text-base font-medium  hover:text-blue-400  "
         >
           Performance Tree
         </div>

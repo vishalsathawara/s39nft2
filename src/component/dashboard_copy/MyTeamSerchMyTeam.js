@@ -4,7 +4,7 @@ const MyTeamSerchMyTeam = () => {
   return (
     <div>
     MyTeamSerchMyTeam 
-    MyTeamSerchMyTeam 
+ 
     </div>
   )
 }

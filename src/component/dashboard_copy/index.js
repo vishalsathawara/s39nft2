@@ -3,10 +3,14 @@ import Header2 from "../Header2";
 import Dashboard from "./Dashboard";
 import MyRank from "./MyRank";
 import MyTeam from "./MyTeam";
+import OurEvents from "./OurEvents";
+
+import GroupsIcon from '@mui/icons-material/Groups';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 function index() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [page, setPage] = useState(<MyTeam />);
+  const [page, setPage] = useState(<OurEvents />);
 
   return (
     <div className="w-full flex justify-center flex-col items-center">
@@ -54,14 +58,18 @@ function index() {
                   <h4 className="ml-4">My Stone</h4>
                 </li>
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
-                  <img src="/svg/dashboard.svg" alt="" />
+                  {/**<img src="/svg/dashboard.svg" alt="" /> */}
+                  <GroupsIcon/>
                   <h4 className="ml-4" onClick={() => setPage(<MyTeam />)}>
                     My Team
                   </h4>
                 </li>
                 <li className="flex px-2 w-full py-3 cursor-pointer hover:bg-white hover:text-blue-400 mt-1">
-                  <img src="/svg/dashboard.svg" alt="" />
-                  <h4 className="ml-4">Our Events</h4>
+                 {/** <img src="/svg/dashboard.svg" alt="" />  */}
+                 <CalendarMonthIcon/>
+                  <h4 className="ml-4" onClick={() => setPage(<OurEvents />)}>
+                    Our Events
+                  </h4>
                 </li>
                 <li className="px-3">
                   Bonuses <span className="w-max px-1 border-b"></span>
@@ -71,13 +79,13 @@ function index() {
           </div>
         </div>
         {/** dashboard component */}
-        {/**
-           <Dashboard/>
-           */}
+        {/**<Dashboard/>*/}
         {/** my rank component */}
         {/**  <MyRank/>  */}
-
         {/** my team component */}
+        {/** <MyTeam/> */}
+        {/** our events component  */}
+        {/** <MyTeam/> */}
         {page}
       </div>
       <div className="mt-48"></div>
